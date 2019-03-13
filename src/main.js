@@ -15,6 +15,9 @@ Vue.use(ElementUI)
 import http from './lib/http'
 Vue.use(http)
 
+//全局导入 面包屑
+ import mybreadcrumb from './components/mybreadcrumb.vue'
+ Vue.component('mybreadcrumb',mybreadcrumb )
 
 new Vue({
   render: h => h(App),

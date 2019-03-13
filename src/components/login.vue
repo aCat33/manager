@@ -57,15 +57,15 @@ export default {
           this.$http.post("login", this.formData).then(res => {
             console.log(res);
             if (res.data.meta.status === 400) {
-              this.$message.error(res.data.meta.msg);
+              // this.$message.error(res.data.meta.msg);
             }else{
-              this.$message.success(res.data.meta.msg);
+              // this.$message.success(res.data.meta.msg);
               window.sessionStorage.setItem('token',res.data.data.token)
-              this.$router.push('/10')
+              this.$router.push('/index')
             }
           });
         } else {
-          this.$message.error("请正确输入用户名和密码");
+          // this.$message.error("请正确输入用户名和密码");
           return false;
         }
       });
