@@ -22,12 +22,12 @@
           class="el-menu-vertical-demo"      
           router
         >
-          <el-submenu index="1" v-for="(item, index) in menuList" :key="index">
+          <el-submenu :index="index" v-for="(item,index) in menuList" >
             <template slot="title" >
               <i class="el-icon-location"></i>
               <span>{{item.authName}}</span>
             </template>             
-              <el-menu-item index="/index/users" v-for="it in item.children" :index="'/' + it.path"><span class="el-icon-menu"></span>{{it.authName}}</el-menu-item>                  
+              <el-menu-item v-for="it in item.children" :index="it.path"><span class="el-icon-menu"></span>{{it.authName}}</el-menu-item>                  
           </el-submenu>
         </el-menu>
       </el-aside>

@@ -1,12 +1,7 @@
 <template>
   <div>
-    <!-- <el-breadcrumb separator-class="el-icon-arrow-right" class="my-breadcrumb">
-      <el-breadcrumb-item :to="{ path: '/index' }">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>用户管理</el-breadcrumb-item>
-      <el-breadcrumb-item>用户列表</el-breadcrumb-item>
-    </el-breadcrumb>-->
     <!-- 面包屑 -->
-    <mybreadcrumb second="用户管理么" third="用户列表么"></mybreadcrumb>
+    <mybreadcrumb second="用户管理" third="用户列表"></mybreadcrumb>
     <!-- 栅格布局-->
     <el-row>
       <el-col :span="6">
